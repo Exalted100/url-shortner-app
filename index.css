@@ -24,6 +24,7 @@
     list-style-type: none;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .navigation-container-desktop ul:nth-child(1) {
@@ -31,7 +32,7 @@
 }
 
 .navigation-container-desktop ul:nth-child(2) {
-    width: 8rem;
+    width: 10rem;
 }
 
 .navigation-container-desktop > ul > li {
@@ -41,4 +42,15 @@
 .navigation-container-desktop > ul > li:hover {
     color: black;
     cursor: pointer;
+}
+
+#sign-up-button {
+    border-radius: 3rem;
+    background-color: hsl(180, 66%, 49%);
+    padding: 0.5rem 1rem;
+    color: white;
+}
+
+#sign-up-button:hover {
+    background-color: hsl(180, 66%, 60%);
 }
