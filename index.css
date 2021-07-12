@@ -1,0 +1,44 @@
+/*NORMALIZE CSS*/
+*, *::before, *::after {
+    font-family: Poppins;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+
+/*IMPORTED FONT*/
+@font-face {
+    font-family: Poppins;
+    src: url(fonts/Poppins-Medium.ttf);
+}
+
+/*NAVIGATION BAR DESKTOP*/
+.navigation-container-desktop {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 7rem;
+}
+
+.navigation-container-desktop > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-container-desktop ul:nth-child(1) {
+    width: 30rem;
+}
+
+.navigation-container-desktop ul:nth-child(2) {
+    width: 8rem;
+}
+
+.navigation-container-desktop > ul > li {
+    color: hsl(0, 0%, 75%);
+}
+
+.navigation-container-desktop > ul > li:hover {
+    color: black;
+    cursor: pointer;
+}
