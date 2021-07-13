@@ -70,7 +70,3 @@ const toggleHamburger = () => {
 
 hamburgerIcon.addEventListener("click", toggleHamburger)
 submitLinkButton.addEventListener("click", shortenLink)
-
-//DELETE LATER
-document.querySelector(".copy-link-button").addEventListener("click", copyShortLink)
-document.querySelector(".short-link").style.width = document.querySelector(".short-link").value.length + "ch"
