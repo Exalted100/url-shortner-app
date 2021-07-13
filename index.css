@@ -14,45 +14,123 @@
 }
 
 /*NAVIGATION BAR DESKTOP*/
-.navigation-container-desktop {
-    display: flex;
-    justify-content: space-between;
-    padding: 3rem 7rem;
+@media only screen and (min-width: 900px) {
+    .navigation-container-mobile {
+        display: none;
+    }
+
+    .navigation-container-desktop {
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem 7rem;
+    }
+    
+    .navigation-container-desktop > ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .navigation-container-desktop ul:nth-child(1) {
+        width: 30rem;
+    }
+    
+    .navigation-container-desktop ul:nth-child(2) {
+        width: 10rem;
+    }
+    
+    .navigation-container-desktop > ul > li {
+        color: hsl(0, 0%, 75%);
+    }
+    
+    .navigation-container-desktop > ul > li:hover {
+        color: black;
+        cursor: pointer;
+    }
+    
+    #sign-up-button {
+        border-radius: 3rem;
+        background-color: hsl(180, 66%, 49%);
+        padding: 0.5rem 1rem;
+        color: white;
+    }
+    
+    #sign-up-button:hover {
+        background-color: hsl(180, 66%, 65%);
+    }
 }
 
-.navigation-container-desktop > ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/*NAVIGATION BAR MOBILE*/
+@media only screen and (max-width: 900px) {
+    .navigation-container-desktop {
+        display: none;
+    }
+
+    .navigation-container-mobile {
+        z-index: 100;
+        color: white;
+    }
+
+    .nav-images-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem 2rem;
+    }
+
+    .nav-bar-mobile-container {
+        display: none;
+        position: absolute;
+        width: 80%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        list-style-type: none;
+        text-align: center;
+        background-color: hsl(257, 27%, 26%);
+        height: fit-content;
+        padding: 1rem 0;
+        border-radius: 5px;
+        animation-duration: 0.5s;
+        animation-name: slideup;
+    }
+
+    .nav-bar-mobile-container li {
+        margin: 2rem 0;
+        font-weight: 700;
+    }
+
+    .nav-bar-mobile-container li:nth-child(4) {
+        width: 80%;
+        margin: 0 auto;
+        border-top: 1px solid hsl(0, 0%, 50%);
+        padding-top: 2rem;
+    }
+
+    @keyframes slideup {
+        from {
+          margin-top: 100%;
+        }
+      
+        to {
+          margin-top: 0%;
+        }
+      }
+
+      #sign-up-button {
+        border-radius: 3rem;
+        background-color: hsl(180, 66%, 49%);
+        padding: 0.5rem 1rem;
+        color: white;
+        width: fit-content;
+        margin: 2rem auto;
+    }
 }
 
-.navigation-container-desktop ul:nth-child(1) {
-    width: 30rem;
-}
-
-.navigation-container-desktop ul:nth-child(2) {
-    width: 10rem;
-}
-
-.navigation-container-desktop > ul > li {
-    color: hsl(0, 0%, 75%);
-}
-
-.navigation-container-desktop > ul > li:hover {
-    color: black;
-    cursor: pointer;
-}
-
-#sign-up-button {
-    border-radius: 3rem;
-    background-color: hsl(180, 66%, 49%);
-    padding: 0.5rem 1rem;
-    color: white;
-}
-
-#sign-up-button:hover {
-    background-color: hsl(180, 66%, 65%);
+/*TO MAINTAIN NAV BAR STRUCTURE IN MOBILE WHEN THE NAV BAR POSITION IS ABSOLUTE*/
+.structural-div {
+    display: none;
+    height: 6rem;
 }
 
 /*FIRST PAGE SECTION*/

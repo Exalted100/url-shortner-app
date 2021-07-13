@@ -28,11 +28,11 @@
 
   <!--NAVIGATION BAR MOBILE-->
   <nav class="navigation-container-mobile">
-    <div>
+    <div class="nav-images-container">
       <div><img src="./images/logo.svg" alt="Shortly logo"></div>
-      <div><img src="./images/icon-hamburger.svg" alt="hamburger icon"></div>
+      <div><img class="hamburger-icon" src="./images/icon-hamburger.svg" alt="hamburger icon"></div>
     </div>
-    <ul>
+    <ul class="nav-bar-mobile-container">
       <li>Features</li>
       <li>Pricing</li>
       <li>Resources</li>
@@ -40,6 +40,9 @@
       <li id="sign-up-button">Sign up</li>
     </ul>
   </nav>
+
+  <!--STRUCTURAL DIV TO PREVENT SHIFT WHEN NAV BAR POSITION BECOMES ABSOLUTE-->
+  <div class="structural-div"></div>
 
   <!--FIRST DIV SECTION-->
   <div class="first-div-container">
@@ -119,5 +122,7 @@
       <div><img src="./images/icon-instagram.svg" alt=""></div>
     </div>
   </footer>
+
+  <script src="./index.js"></script>
 </body>
 </html>
