@@ -118,22 +118,27 @@
 
 /*SECOND PAGE SECTION*/
 .second-div-container {
-    background-color: hsl(257, 7%, 63%);
-    padding-bottom: 3rem;
+    background-color: hsl(257, 7%, 80%);
 }
 
 @media only screen and (min-width: 900px) {
+    .second-div-container {
+        padding: 0 7rem;
+        padding-bottom: 3rem;
+    }
+
     .link-form-container {
         background-image: url("./images/bg-shorten-desktop.svg");
         background-repeat: no-repeat;
         background-color: hsl(257, 27%, 26%);
-        width: 80%;
-        margin: 0 auto;
+        background-size: cover;
+        width: 100%;
         text-align: center;
         padding: 2.5rem 0;
         height: 8rem;
         position: relative;
         top: -4rem;
+        border-radius: 5px;
     }
 
     .link-input {
@@ -166,10 +171,16 @@
 }
 
 @media only screen and (max-width: 900px) {
+    .second-div-container {
+        padding: 0 2rem;
+        padding-bottom: 2rem;
+    }
+
     .link-form-container {
         background-image: url("./images/bg-shorten-mobile.svg");
         background-repeat: no-repeat;
         background-color: hsl(257, 27%, 26%);
+        background-size: cover;
         width: 80%;
         margin: 0 auto;
         text-align: center;
@@ -177,6 +188,7 @@
         height: 9rem;
         position: relative;
         top: -4.5rem;
+        border-radius: 5px;
     }
 
     .link-input {
@@ -206,4 +218,177 @@
         color: white;
         font-size: 0.9rem;
     }
+}
+
+/*THIRD PAGE SECTION*/
+@media only screen and (min-width: 900px) {
+    .third-div-container {
+        background-color: hsl(257, 7%, 80%);
+        padding: 0 7rem;
+        padding-bottom: 10rem;
+    }
+
+    .advanced-statistics-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4rem;
+    }
+
+    .advanced-statistics-container > div {
+        flex: 0.3;
+        padding: 2rem;
+        background-color: white;
+        border-radius: 5px;
+    }
+    
+    .advanced-statistics-container > div:nth-child(2) {
+        position: relative;
+        top: 2rem;
+    }
+    
+    .advanced-statistics-container > div:nth-child(3) {
+        position: relative;
+        top: 4rem;
+    }
+
+    .third-div-image-container {
+        background-color: hsl(257, 27%, 26%);
+        width: 4rem;
+        height: 4rem;
+        padding: 1rem;
+        border-radius: 50%;
+        margin-top: -4rem;
+    }
+    
+    .third-div-image-container > img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    .advanced-statistics-container > div > h4 {
+        color: hsl(257, 27%, 26%);
+        margin-top: 1.5rem;
+    }
+    
+    .advanced-statistics-container > div > p {
+        color: hsl(0, 0%, 75%);
+        margin-top: 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .third-div-container {
+        background-color: hsl(257, 7%, 80%);
+        padding: 0 2rem;
+        padding-bottom: 3rem;
+    }
+
+    .advanced-statistics-container {
+        margin-top: 4rem;
+    }
+
+    .advanced-statistics-container > div {
+        padding: 2rem;
+        background-color: white;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .third-div-image-container {
+        background-color: hsl(257, 27%, 26%);
+        width: 4rem;
+        height: 4rem;
+        padding: 1rem;
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-top: -4rem;
+    }
+    
+    .third-div-image-container > img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    .advanced-statistics-container > div > h4 {
+        color: hsl(257, 27%, 26%);
+        margin-top: 1.5rem;
+    }
+    
+    .advanced-statistics-container > div > p {
+        color: hsl(0, 0%, 75%);
+        margin-top: 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+.h3-header {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+.shortly-description {
+    margin: 0.5rem 0;
+    color: hsl(0, 0%, 50%);
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 2rem;
+    line-height: 2rem;
+}
+
+/*FOURTH PAGE SECTION*/
+@media only screen and (min-width: 900px) {
+    .fourth-div-container {
+        background-image: url("./images/bg-boost-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: hsl(257, 27%, 26%);
+        text-align: center;
+        padding: 5rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .fourth-div-container {
+        background-image: url("./images/bg-boost-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: hsl(257, 27%, 26%);
+        text-align: center;
+        padding: 4rem;
+    }
+}
+
+.fourth-div-container > h3 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    color: white;
+}
+
+.fourth-div-container > p {
+    border-radius: 3rem;
+    background-color: hsl(180, 66%, 49%);
+    padding: 0.5rem 1rem;
+    color: white;
+    width: fit-content;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.fourth-div-container > p:hover {
+    background-color: hsl(180, 66%, 65%);
+}
+
+/*FOOTER SECTION*/
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 7rem;
+    background-color: hsl(255, 11%, 22%);
+    color: white;
 }
