@@ -286,6 +286,16 @@
         background-color: hsl(180, 66%, 65%);
         cursor: pointer;
     }
+
+    .loading-spinner-container {
+        padding: 1rem 2rem;
+        position: relative;
+        top: -2.5rem;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        background-color: white;
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -299,7 +309,7 @@
         background-repeat: no-repeat;
         background-color: hsl(257, 27%, 26%);
         background-size: cover;
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         text-align: center;
         padding: 1rem 0;
@@ -344,7 +354,7 @@
         margin: 1rem auto;
         border-radius: 5px;
         background-color: white;
-        width: 80%;
+        width: 100%;
     }
 
     .link-details-container > p {
@@ -372,6 +382,17 @@
         margin: 0 auto;
         width: 100%;
     }
+
+    .loading-spinner-container {
+        padding: 1rem 2rem;
+        position: relative;
+        top: -2.5rem;
+        margin: 1rem auto;
+        border-radius: 5px;
+        background-color: white;
+        width: 100%;
+        display: none;
+    }
 }
 
 .error-message {
@@ -382,6 +403,21 @@
     width: 85%;
     margin: 0 auto;
     display: none;
+}
+
+.loading-spinner {
+    border: 0.3rem solid #f3f3f3;
+    border-top: 0.3rem solid hsl(180, 66%, 49%);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin: 0 auto;
+    animation: spin 1s linear infinite;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 /*THIRD PAGE SECTION*/

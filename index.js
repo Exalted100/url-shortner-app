@@ -17,6 +17,7 @@ const shortenLink = async (event) => {
         document.querySelector(".link-input").style.border = "1px solid red"
     } else {
         try {
+            document.querySelector(".loading-spinner-container").style.display = "block"
             document.querySelector(".error-message").style.display = "none"
             document.querySelector(".link-input").style.border = "none"
 
@@ -35,6 +36,7 @@ const shortenLink = async (event) => {
                                     </div>
                                 </div>`
 
+            document.querySelector(".loading-spinner-container").style.display = "none"            
             document.querySelector(".short-link-list-container").innerHTML += linkDetails
             const shortLinkNodes = document.querySelectorAll(".short-link")
             const copyLinkNodes = document.querySelectorAll(".copy-link-button")
