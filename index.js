@@ -5,9 +5,16 @@ const mobileNavContainer = document.querySelector(".navigation-container-mobile"
 const structuralDiv = document.querySelector(".structural-div")
 
 function copyShortLink() {
+    let copyLinkNodes = document.querySelectorAll(".copy-link-button")
+    for (let i = 0; i < copyLinkNodes.length; i++) {
+        copyLinkNodes[i].textContent = "Copy"
+        copyLinkNodes[i].style.backgroundColor = "hsl(180, 66%, 49%)"
+    }
     const id = this.getAttribute('data-argument')
     document.querySelector(`#o${id}`).select()
     document.execCommand("copy")
+    this.textContent = "Copied!"
+    this.style.backgroundColor = "hsl(257, 27%, 26%)"
 }
 
 const shortenLink = async (event) => {
